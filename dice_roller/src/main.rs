@@ -28,4 +28,4 @@ fn main() {
     */
     let name = string_input(String::from("Enter your name: "));
     println!("Your name is: {}", name);
-}
+}no
