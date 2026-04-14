@@ -15,7 +15,7 @@ fn string_input(prompt: String) -> String {
         let trimmed = input.trim().to_string();
 
         if trimmed.is_empty() {
-            eprintln!("Invalid input, please enter a valid string...");
+            println("Invalid input, please enter a valid string...");
             continue;
         }
         return trimmed;
