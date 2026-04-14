@@ -1,10 +1,8 @@
 use std::io;
 
-
 fn string_input(prompt: String) -> String {
     loop {
         let mut input = String::new();
-
         println!("{}", prompt);
 
         if let Err(e) = io::stdin().read_line(&mut input) {
@@ -15,13 +13,13 @@ fn string_input(prompt: String) -> String {
         let trimmed = input.trim().to_string();
 
         if trimmed.is_empty() {
-            println("Invalid input, please enter a valid string...");
+            println!("Invalid input, please enter a valid string...");  // fixed!
             continue;
         }
+
         return trimmed;
     }
 }
-
 
 fn main() {
     /*
